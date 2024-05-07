@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <!--
+    * Um layout XML que define a aparência de um item na lista do RecyclerView.
+    * Este layout é utilizado para exibir um único item em uma lista ou RecyclerView.
+    * Este layout é um LinearLayout vertical que contém um TextView para exibir o nome do item.
+
+    * @attr android:layout_width A largura do layout, definida como "match_parent" para preencher a largura do contêiner pai.
+    * @attr android:layout_height A altura do layout, definida como "?android:attr/listPreferredItemHeight" para corresponder à altura preferida do item da lista padrão do sistema.
+    * @attr android:gravity O alinhamento dos filhos do layout, definido como "center_vertical" para centralizar verticalmente os filhos.
+    * @attr android:padding O preenchimento interno do layout, definido como "8dp" para adicionar um espaço de preenchimento de 8dp ao redor do conteúdo do layout.
+     -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:gravity="center_vertical"
+    android:padding="8dp">
+
+    <!--
+    * TextView para exibir o nome do item.
+    * @attr android:id Define um ID único para o TextView, que pode ser usado para referenciá-lo programaticamente em Java ou Kotlin.
+    * @attr android:layout_width Define a largura do TextView como "wrap_content" o que significa que o TextView deve dimensionar para caber no conteúdo do texto.
+    * @attr android:layout_height  Define a altura do TextView como "wrap_content", o TextView irá redimensionar para caber no conteúdo do texto.
+    * @attr android:textSize Define o tamanho do texto como 18sp (escala independente de pixels).
+    * @attr android:textStyle Define o estilo do texto, no caso como negrito.
+    * @attr tools:text Define um texto de exemplo para ser exibido no layout ao visualizar o layout no Android Studio. Este atributo é usado apenas durante o design e não é incluído no APK final.
+
+
+
+    -->
+    <TextView
+        android:id="@+id/textViewItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:text="Novo Item" />
+
+</LinearLayout>
